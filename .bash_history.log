@@ -1,0 +1,172 @@
+2023-09-19 15:32:40 -   233  source ~/.bashrc
+2023-09-19 15:32:47 -   234  kubectl get svc
+2023-09-19 15:32:51 -   235  cat .bash_history
+2023-09-19 15:33:04 -   236  cat .bash_history.log 
+2023-09-19 15:33:16 -   237  kubectl get pods -o wide
+2023-09-19 15:33:18 -   238  cat .bash_history.log 
+2023-09-19 15:33:21 -   240  cat .bash_history.log 
+2023-09-19 15:33:27 -   241  kubectl get rs
+2023-09-19 15:33:33 -   242  cat ~/.bash_history.log 
+2023-09-19 15:34:11 -   243  kubectl get pod my-helloworld-rs-htd2f -o yaml | yq e '.spec.volumes' -
+2023-09-19 15:34:25 -   244  cat ~/.bash_history.log 
+2023-09-19 15:34:38 -   245  kubectl get rs
+2023-09-19 15:35:43 -   246  kubectl expose rs my-helloworld-rs --type=LoadBalancer --port=80 --target-port=8080 --name=my-helloworld-rs-service
+2023-09-19 15:35:51 -   247  kubectl get svc
+2023-09-19 15:51:19 -   247  kubectl get svc
+2023-09-19 15:53:57 -   248  kubectl get pods
+2023-09-19 15:54:09 -   249  kubect exec -it my-helloworld-rs-q7d2s -- env
+2023-09-19 15:54:18 -   250  kubectl exec -it my-helloworld-rs-q7d2s -- env
+2023-09-19 15:57:47 -   251  kubectl get svc
+2023-09-19 15:58:03 -   252  kubectl get svc my-helloworld-rs-service -o yaml | grep Labels
+2023-09-19 15:58:25 -   253  kubectl describe svc my-helloworld-rs-service
+2023-09-19 15:58:40 -   254  kubectl describe svc my-helloworld-rs-service | grep Labels
+2023-09-19 15:59:32 -   255  kubectl delete all -l app=my-helloworld
+2023-09-19 16:00:42 -   256  kubectl get all -l app=my-helloworld
+2023-09-19 17:34:07 -   257  kubectl get pods
+2023-09-19 17:36:59 -   258  kubectl create deployment mydeployment --image=stacksimplify/kubenginx:1.0.0
+2023-09-19 17:37:10 -   259  kubectl get all
+2023-09-19 17:38:24 -   260  kubectl get rs
+2023-09-19 17:38:38 -   261  kubectl create deployment --help
+2023-09-19 17:40:50 -   262  kubectl get depl
+2023-09-19 17:40:56 -   263  kubectl get deployment
+2023-09-19 17:41:19 -   264  kubectl describe deployment mydeployment -o yaml | grep Labels
+2023-09-19 17:41:44 -   265  kubectl get deployment mydeployment -o yaml | grep Labels
+2023-09-19 17:41:57 -   266  kubectl describe deployment mydeployment
+2023-09-19 17:42:09 -   267  kubectl get pods
+2023-09-19 17:42:20 -   268  kubectl describe pod mydeployment-7d846747b9-mb9x7
+2023-09-19 17:42:40 -   269  kubectl describe pod mydeployment-7d846747b9-mb9x7 | grep Labels
+2023-09-19 17:43:05 -   270  kubectl delete all -l app=mydeployment
+2023-09-19 17:43:19 -   271  kubectl create deployment mydeployment --image=stacksimplify/kubenginx:1.0.0 --replicas=3
+2023-09-19 17:43:26 -   272  kubectl get pods
+2023-09-19 17:44:50 -   273  kubectl expose deployment mydeployment --type=LoadBalancer --port=80 
+2023-09-19 17:44:59 -   274  kubectl get svc
+2023-09-19 17:45:05 -   274  kubectl get svc
+2023-09-19 17:45:18 -   274  kubectl get svc
+2023-09-19 17:45:39 -   274  kubectl get svc
+2023-09-19 17:45:55 -   275  curl http://34.134.244.154
+2023-09-19 17:46:50 -   276  kubectl get rs
+2023-09-19 17:47:00 -   277  kubectl get all
+2023-09-19 17:47:12 -   278  kubectl get all -l app=mydeployment
+2023-09-19 17:47:32 -   279  kubectl get deploy
+2023-09-19 17:47:40 -   280  kubectl describe mydeployment
+2023-09-19 17:47:51 -   281  kubectl describe deploy mydeployment
+2023-09-19 17:49:05 -   282  kubectl describe replicaset.apps/mydeployment-7d846747b9
+2023-09-19 17:50:50 -   283  cd
+2023-09-19 17:51:01 -   284  vim .bashrc
+2023-09-19 17:51:25 -   285  sudo apt install vim 
+2023-09-19 17:51:53 -   286  sudo nano .bashrc
+2023-09-19 17:51:57 -   287  cat .bashrc
+gcloud projects
+history -a
+history -n
+gcloud projects list
+gcloud projects --help
+kubectl get pods -o wide
+cat .bash_history.log
+PROMPT_COMMAND='history -a; history -n'
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+[[ "$HISTCONTROL" =~ .*(erasedups|ignoreboth|ignoredups).* ]]
+__vsc_history_verify=0
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+cat ~/.bash_history.log
+source ~/.bashrc
+kubectl get deploy -o wide
+kubectl get pods
+kubectl scale --help
+kubectl get deploy
+kubectl rollout history
+kubectl rollout history deploy mydeployment
+kubectl scale --current-replicas=3 replicas=5 deployment/mydeployment
+kubectl scale --current-replicas=3 --replicas=4 deployment mydeployment
+kubectl rollout history --help
+kubectl rollout history --revision=1
+kubectl annotate deployment/mydeployment kubernetes.io/change-cause="Deployment Create - App Version 1.0.0"
+kubectl rollout history deploy/mydeployment
+kubectl describe deploy mydeployment
+kubectl annotate --help
+kubectl annotate deployment mydeployment description="My First Deployment on GKE"
+kubectl scale replicas=3 deployment/mydeployment
+kubectl scale replicas=3 deployment mydeployment
+kubectl scale --replicas=3 deployment mydeployment
+kubectl scale --replicas=2 deployment/mydeployment
+kubectl get svc
+grep --color=auto expose
+kubectl describe svc mydeployment
+kubectl expose deploy deployment --help
+kubectl delete svc mydeployment
+kubectl get all
+kubectl expose deploy mydeployment --type=LoadBalancer --port=8000 --target-port=80 --name=mydeployment-svc
+kubectl describe svc mydeployment-svc
+grep --color=auto Labels
+curl 35.192.54.217
+curl 35.192.54.217:8000
+kubectl delte svc mydeployment-svc
+kubectl delete svc mydeployment-svc
+kubectl expose deploy mydeployment --type=LoadBalancer --port=80 --target-port=8000 --name=mydeployment-svc
+kubectl get sv
+kubectl describe svc/mydeployment-svc
+kubectl expose deploy mydeployment --type=LoadBalancer --port=80 --target-port=80 --name=mydeployment-svc
+kubectl get deployment mydeployment -o wide
+kubectl set-image --help
+kubectl set image --help
+kubectl get deployment mydeployment -o yaml
+kubectl set image deployment/mydeployment kubenginx=stacksimplify/kubenginx:2.0.0 --record=true
+kubectl rollout history deployment/mydeployment
+kubectl get pods --watch
+curl 34.134.244.154
+grep --color=auto --record
+grep --color=auto record
+kubectl rollout status deploy mydeployment
+kubectl describe deployment/mydeployment
+kubectl get rs
+kubectl annotate deployment/mydeployment kubernetes.io/change-cause="Updated App to kubenginx:2.0.0"
+kubectl annotate deployment/mydeployment kubernetes.io/change-cause="Updated App to kubenginx:2.0.0 SET IMAGE OPTION"
+kubectl edit deployment mydeployment
+kubectl rollout status
+kubectl rollout status deploy/mydeployment
+kubectl describe deploy/mydeployment
+kubectl get replicaset
+kubectl rollout history deployment mydeploymnet
+kubectl rollout history deployment mydeployment
+open ~/.bash_history.log
+cd
+ls --color=auto
+ls --color=auto -a
+vim .gitignore
+cat .gitignore
+git init
+git status
+git add .
+git add .bash_history.log
+git push origin master
+gi add .bash_history.log
+git commit -m "All kube commands"
+git commit --amend --no-edit
+git log
+git reset .
+git reset HEAD~2
+git reset HEAD ~2
+git satus
+rm -rf .git
+git add .gitignore
+git commit -m "Updating gitignore file"
+git remote add origin https://github.com/Alexeino/kube-commands.git
