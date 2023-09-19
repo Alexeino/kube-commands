@@ -1,0 +1,7 @@
+# Ignore everything in the repository
+*
+
+# But include bash_history.log
+!/.bash_history.log
+!.bash_history.log
+!.gitignore
